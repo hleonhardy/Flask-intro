@@ -8,10 +8,11 @@ from flask import Flask, request
 # Flask wants to know this to know what any imported things are relative to.
 app = Flask(__name__)
 
+
 def loop_compliments(AWESOMENESS):
     string = ""
     for compliment in AWESOMENESS:
-      string = string + "<option value={}>{}</option>".format(compliment, compliment)
+        string = string + "<option value={}>{}</option>".format(compliment, compliment)
     return string
 
 
